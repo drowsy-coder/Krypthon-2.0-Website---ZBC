@@ -1485,7 +1485,7 @@ readers do not read off random characters that represent icons */
 .fa-facebook:before {
   content: "\f09a"; }
 
-.fa-facebook-f:before {
+.fa-instagram:before {
   content: "\f39e"; }
 
 .fa-facebook-messenger:before {
