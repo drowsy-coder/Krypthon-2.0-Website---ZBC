@@ -3,8 +3,11 @@
     "name": "startbootstrap-grayscale",
     "version": "5.0.9",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch",
-        "build": "node_modules/.bin/gulp build"
+        "start": "parcel",
+        "build": "parcel build",
+        "build-gh": "parcel build --public-url 'https://{github-username}.github.io/{repo-name}'",
+        "predeploy": "npm run build-gh",
+        "deploy": "gh-pages -d dist"
     },
     "description": "A grayscale one page HTML theme for Bootstrap.",
     "keywords": [
